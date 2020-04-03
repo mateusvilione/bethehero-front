@@ -9,26 +9,26 @@ import logoImg from "../../assets/logo.svg";
 import heroesImg from "../../assets/heroes.png";
 
 export default function Logon() {
-  return (
-    <div className="logon-container">
-      <section className="form">
-        <img src={logoImg} alt="Be The Hero" />
+    return (
+        <div className="logon-container">
+            <section className="form">
+                <img src={logoImg} alt="Be The Hero" />
 
-        <form>
-          <h1>Faça seu logon</h1>
+                <form>
+                    <h1>Faça seu logon</h1>
 
-          <input type="text" placeholder="Seu ID" />
+                    <input type="text" placeholder="Seu ID" />
 
-          <button className="button" type="submit">Entrar</button>
+                    <button className="button" type="submit">Entrar</button>
 
-          <Link to="/register">
-            <FiLogIn size={16} color="#E01041" />
-            Não tenho um cadastro
-          </Link>
-        </form>
-      </section>
+                    <Link className="back-link" to="/register">
+                        <FiLogIn size={16} color="#E01041" />
+                            Não tenho um cadastro
+                    </Link>
+                </form>
+            </section>
 
-      <img src={heroesImg} alt="Heroes" />
-    </div>
-  );
+            <img src={heroesImg} alt="Heroes" />
+        </div>
+    );
 }
